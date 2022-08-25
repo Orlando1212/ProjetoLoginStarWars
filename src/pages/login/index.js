@@ -1,10 +1,16 @@
 import React from 'react';
+import { useDispatch } from 'react-redux'; 
 
 import './style.css';
+
+
 import axios from '../../services/axios';
+import * as exampleActions from '../../store/modules/example/action';
 
 
 function Login(){
+
+    const dispatch = useDispatch();
     
     React.useEffect(() => {
         async function getData(){
@@ -17,12 +23,18 @@ function Login(){
 
     },[]);
 
+    function handleClick(e){
+        e.preventDefault();
+       
+        dispatch(exampleActions.clicaBotao());
+    }
+
     return(
         <div className="container">
             <h1>Hello</h1>
             <small>Ooiie</small>
         <p>Lorem ipsum dor sit emet</p>
-        <button type="button">Enviar</button>
+        <button type="button" onClick={handleClick}>Enviar</button>
     </div>
     
     );
