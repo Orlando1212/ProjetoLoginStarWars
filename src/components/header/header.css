@@ -1,13 +1,12 @@
-nav{
-    background: #C3073F;
+h1{
+    color: #fff;
+    font-family: sans-serif;
+}
+
+header{
+    background: black;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-nav a {
-    color: #fff;
-    margin: 0 10px 0;
-    font-weight: bold;
 }

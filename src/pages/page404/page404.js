@@ -1,12 +1,16 @@
 import React from 'react';
 
-
+import './page404.css';
 
 
 function Page404(){
     
     return (
-        <h1>A pagina não existe</h1>
+        <>
+        <h2 className="number">404</h2>
+
+        <h2>A pagina não existe</h2>
+        </>
     );
 }
 
